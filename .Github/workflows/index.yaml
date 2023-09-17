@@ -1,5 +1,11 @@
 name: workflow
 
+<<<<<<< HEAD
+=======
+
+name: workflow
+
+>>>>>>> dd749971672a705e5f78daa24b1819b6e4a6fed5
 on:
   push:
     branches:
@@ -61,5 +67,4 @@ jobs:
           docker build -t $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG .
           docker push $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
           echo "::set-output name=image::$ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG"
-          
           
