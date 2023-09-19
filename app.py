@@ -1,8 +1,8 @@
 from flask import Flask,render_template,jsonify,request
 from src.pipeline.prediction_pipeline import Customers,PredictPipeline
 
-application =  Flask(__name__)
-app = application
+app =  Flask(__name__)
+
 
 @app.route('/')
 def home_page():
